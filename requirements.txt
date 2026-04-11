@@ -1,0 +1,5 @@
+imageio-ffmpeg>=0.4.9
+librosa>=0.10.2
+numpy>=1.26,<3
+pillow>=10.0
+soundfile>=0.12

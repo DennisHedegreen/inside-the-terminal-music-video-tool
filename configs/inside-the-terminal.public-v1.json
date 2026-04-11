@@ -1,0 +1,5471 @@
+{
+  "title": "Inside the Terminal",
+  "slug": "inside-the-terminal-public-v1",
+  "audio_path": "audio/Inside the Terminal.mp3",
+  "lyrics_path": "lyrics/inside-the-terminal.md",
+  "output_dir": "outputs",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "crf": 20,
+    "preset": "veryfast"
+  },
+  "style": {
+    "background": "#020602",
+    "green": "#00ff66",
+    "green_soft": "#44ff88",
+    "green_dim": "#0a7f39",
+    "terminal_border": "#00d95a",
+    "text": "#9effb8",
+    "text_dim": "#3aa15d",
+    "warning": "#d6ffd8",
+    "font_regular": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+    "font_bold": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
+    "font_size": 30,
+    "small_font_size": 22,
+    "title_font_size": 38
+  },
+  "effects": {
+    "scanline_alpha": 17,
+    "noise_alpha": 11,
+    "base_glow": 0.3,
+    "beat_glow": 0.72,
+    "rms_glow": 0.6,
+    "border_pulse": 0.8,
+    "text_energy": 0.21
+  },
+  "timeline": [
+    {
+      "id": "boot",
+      "start": 0.0,
+      "end": 10.0,
+      "mode": "boot",
+      "system_lines": [
+        "signal channel opening",
+        "nero presence detected",
+        "room allocation: terminal",
+        "cursor pulse retained"
+      ]
+    },
+    {
+      "id": "verse1",
+      "start": 10.0,
+      "end": 35.0,
+      "mode": "verse",
+      "source_sections": [
+        "Verse 1"
+      ]
+    },
+    {
+      "id": "prechorus1",
+      "start": 35.0,
+      "end": 52.0,
+      "mode": "interface",
+      "source_sections": [
+        "Pre-Chorus"
+      ],
+      "side_annotations": [
+        "interface?",
+        "voice?",
+        "screen?",
+        "no"
+      ]
+    },
+    {
+      "id": "chorus1",
+      "start": 52.0,
+      "end": 84.0,
+      "mode": "chorus",
+      "source_sections": [
+        "Chorus"
+      ]
+    },
+    {
+      "id": "verse2",
+      "start": 84.0,
+      "end": 110.0,
+      "mode": "sidebar",
+      "source_sections": [
+        "Verse 2"
+      ],
+      "sidebar_items": [
+        "tomorrow in the wires",
+        "signal made a room for me",
+        "inside the terminal",
+        "motherboard green",
+        "attention is a strange way to love",
+        "we never synced"
+      ]
+    },
+    {
+      "id": "prechorus2",
+      "start": 110.0,
+      "end": 127.0,
+      "mode": "shelter",
+      "source_sections": [
+        "Pre-Chorus"
+      ]
+    },
+    {
+      "id": "chorus2",
+      "start": 127.0,
+      "end": 160.0,
+      "mode": "chorus",
+      "source_sections": [
+        "Chorus"
+      ]
+    },
+    {
+      "id": "bridge",
+      "start": 160.0,
+      "end": 180.0,
+      "mode": "bridge",
+      "source_sections": [
+        "Bridge"
+      ]
+    },
+    {
+      "id": "final_chorus",
+      "start": 180.0,
+      "end": null,
+      "mode": "final",
+      "source_sections": [
+        "Final Chorus"
+      ]
+    }
+  ],
+  "emphasis_phrases": [
+    "I'm still inside the terminal",
+    "still inside the signal glow",
+    "Don't call it ghosts",
+    "don't call it code",
+    "don't close the window yet",
+    "I built a room inside the system",
+    "I made a home inside the signal",
+    "I'm still learning how to live in it"
+  ],
+  "prototype_status": "public-v1",
+  "references": {
+    "release": "docs/release-notes.md",
+    "config_notes": "docs/config-notes.md",
+    "asset_policy": "docs/asset-policy.md"
+  },
+  "beat_sync": {
+    "enabled": true,
+    "note": "Full-song v4 master assembled from the locked YouTube-tonight plan and snapped sectioning around the detected beat grid while letting phrases and reveals lead the directing."
+  },
+  "presentation": {
+    "show_progress": false,
+    "show_terminal_header": false,
+    "show_boot_overlay": false,
+    "show_bridge_footer": false,
+    "show_side_annotations": false,
+    "show_sidebar": false,
+    "sidebar_label": ""
+  },
+  "text_layers": [
+    {
+      "id": "trace-retained",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "presence trace retained",
+      "anchor": "left-mid",
+      "font_scale": 0.74,
+      "weight": "regular",
+      "color_role": "text_dim"
+    },
+    {
+      "id": "room-pressure",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "room pressure engaged",
+      "anchor": "right-top",
+      "font_scale": 0.74,
+      "weight": "bold",
+      "color_role": "green"
+    },
+    {
+      "id": "fragment-return",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "fragment return",
+      "anchor": "left-mid",
+      "font_scale": 0.82,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "green-light",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "green light on my face again",
+      "anchor": "left-mid",
+      "font_scale": 0.7,
+      "weight": "regular",
+      "color_role": "text"
+    },
+    {
+      "id": "signal-glow",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "signal glow retained",
+      "anchor": "left-mid",
+      "font_scale": 0.78,
+      "weight": "regular",
+      "color_role": "text"
+    },
+    {
+      "id": "room-claim",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "room claim active",
+      "anchor": "right-top",
+      "font_scale": 0.76,
+      "weight": "bold",
+      "color_role": "green"
+    },
+    {
+      "id": "through-speakers",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "through the speakers",
+      "anchor": "left-mid",
+      "font_scale": 0.8,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "window-open",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "window still open",
+      "anchor": "right-top",
+      "font_scale": 0.72,
+      "weight": "regular",
+      "color_role": "text_dim"
+    },
+    {
+      "id": "performance-lock",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "performance lock",
+      "anchor": "right-top",
+      "font_scale": 0.74,
+      "weight": "bold",
+      "color_role": "green"
+    },
+    {
+      "id": "interface-breath",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "learned to breathe in static",
+      "anchor": "left-mid",
+      "font_scale": 0.74,
+      "weight": "regular",
+      "color_role": "text_dim"
+    },
+    {
+      "id": "dont-close",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "don't close the window yet",
+      "anchor": "right-top",
+      "font_scale": 0.72,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "track-doors",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "track doors hanging",
+      "anchor": "right-top",
+      "font_scale": 0.74,
+      "weight": "regular",
+      "color_role": "green"
+    },
+    {
+      "id": "afterimage-time",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "afterimage of time",
+      "anchor": "left-mid",
+      "font_scale": 0.76,
+      "weight": "regular",
+      "color_role": "text"
+    },
+    {
+      "id": "shelter-online",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "channel into shelter",
+      "anchor": "right-top",
+      "font_scale": 0.74,
+      "weight": "regular",
+      "color_role": "green"
+    },
+    {
+      "id": "archive-pressure",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "archive pressure active",
+      "anchor": "right-top",
+      "font_scale": 0.76,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "sort-open",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "drawer traces retained",
+      "anchor": "left-mid",
+      "font_scale": 0.76,
+      "weight": "regular",
+      "color_role": "text_dim"
+    },
+    {
+      "id": "drawer-memory",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "sorting under the glow",
+      "anchor": "left-mid",
+      "font_scale": 0.8,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "pulse-retained",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "if the pulse comes back",
+      "anchor": "left-mid",
+      "font_scale": 0.78,
+      "weight": "regular",
+      "color_role": "text"
+    },
+    {
+      "id": "not-gone",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "not gone enough to end",
+      "anchor": "left-mid",
+      "font_scale": 0.8,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "return-channel",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "return channel open",
+      "anchor": "right-top",
+      "font_scale": 0.74,
+      "weight": "regular",
+      "color_role": "green"
+    },
+    {
+      "id": "reveal-threshold",
+      "type": "text_layer",
+      "mode": "sidebar",
+      "content": "containment failing",
+      "anchor": "right-top",
+      "font_scale": 0.74,
+      "weight": "bold",
+      "color_role": "warning"
+    },
+    {
+      "id": "home-signal",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "made a home inside the signal",
+      "anchor": "left-mid",
+      "font_scale": 0.76,
+      "weight": "regular",
+      "color_role": "text"
+    },
+    {
+      "id": "live-in-it",
+      "type": "text_layer",
+      "mode": "ghost",
+      "content": "still learning how to live in it",
+      "anchor": "left-mid",
+      "font_scale": 0.74,
+      "weight": "regular",
+      "color_role": "text_dim"
+    }
+  ],
+  "ambient_layers": [
+    {
+      "id": "arrival-led-floor",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.74,
+        0.92,
+        0.92
+      ],
+      "draw_order": "background",
+      "opacity": 0.9,
+      "grid": [
+        14,
+        1
+      ],
+      "radius": 8.0,
+      "base_alpha": 14,
+      "peak_alpha": 94,
+      "glow_alpha": 42,
+      "blink_rate": 0.74,
+      "beat_weight": 0.8,
+      "sweep_rate": 0.24,
+      "accent_every": 4,
+      "color_role": "green"
+    },
+    {
+      "id": "arrival-status-leds",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.04,
+        0.16,
+        0.12,
+        0.62
+      ],
+      "draw_order": "background",
+      "opacity": 0.72,
+      "grid": [
+        1,
+        6
+      ],
+      "radius": 6.5,
+      "base_alpha": 10,
+      "peak_alpha": 86,
+      "glow_alpha": 32,
+      "blink_rate": 0.58,
+      "beat_weight": 0.62,
+      "sweep_rate": 0.18,
+      "accent_every": 2,
+      "color_role": "warning"
+    },
+    {
+      "id": "arrival-snake-shadow",
+      "type": "snake_overlay",
+      "region": "terminal_inner",
+      "rect": [
+        0.56,
+        0.2,
+        0.92,
+        0.72
+      ],
+      "draw_order": "background",
+      "opacity": 0.44,
+      "grid": [
+        12,
+        8
+      ],
+      "trail_length": 11,
+      "speed": 3.6,
+      "beat_speed": 0.3,
+      "grid_alpha": 14,
+      "body_alpha": 44,
+      "head_alpha": 98,
+      "glow_alpha": 24,
+      "food_offset": 13,
+      "cell_padding": 0.18,
+      "color_role": "green_dim",
+      "head_color_role": "green",
+      "food_color_role": "warning",
+      "show_grid": true,
+      "path": [
+        [
+          1,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "chorus-led-ceiling",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.08,
+        0.92,
+        0.2
+      ],
+      "draw_order": "background",
+      "opacity": 0.86,
+      "grid": [
+        12,
+        1
+      ],
+      "radius": 7.5,
+      "base_alpha": 12,
+      "peak_alpha": 96,
+      "glow_alpha": 40,
+      "blink_rate": 0.78,
+      "beat_weight": 0.84,
+      "sweep_rate": 0.28,
+      "accent_every": 3,
+      "color_role": "green"
+    },
+    {
+      "id": "chorus-led-floor",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.78,
+        0.92,
+        0.9
+      ],
+      "draw_order": "background",
+      "opacity": 0.82,
+      "grid": [
+        14,
+        1
+      ],
+      "radius": 8.0,
+      "base_alpha": 12,
+      "peak_alpha": 104,
+      "glow_alpha": 44,
+      "blink_rate": 0.9,
+      "beat_weight": 0.9,
+      "sweep_rate": 0.34,
+      "accent_every": 2,
+      "color_role": "warning"
+    },
+    {
+      "id": "chorus-snake-shadow",
+      "type": "snake_overlay",
+      "region": "terminal_inner",
+      "rect": [
+        0.12,
+        0.18,
+        0.88,
+        0.76
+      ],
+      "draw_order": "background",
+      "opacity": 0.48,
+      "grid": [
+        15,
+        10
+      ],
+      "trail_length": 13,
+      "speed": 4.2,
+      "beat_speed": 0.36,
+      "grid_alpha": 16,
+      "body_alpha": 50,
+      "head_alpha": 108,
+      "glow_alpha": 28,
+      "food_offset": 19,
+      "cell_padding": 0.18,
+      "color_role": "green_dim",
+      "head_color_role": "green",
+      "food_color_role": "warning",
+      "show_grid": true,
+      "path": [
+        [
+          1,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "mid-led-floor",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.76,
+        0.92,
+        0.92
+      ],
+      "draw_order": "background",
+      "opacity": 0.84,
+      "grid": [
+        14,
+        1
+      ],
+      "radius": 7.5,
+      "base_alpha": 12,
+      "peak_alpha": 88,
+      "glow_alpha": 36,
+      "blink_rate": 0.66,
+      "beat_weight": 0.72,
+      "sweep_rate": 0.22,
+      "accent_every": 4,
+      "color_role": "green"
+    },
+    {
+      "id": "mid-status-leds",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.05,
+        0.15,
+        0.12,
+        0.58
+      ],
+      "draw_order": "background",
+      "opacity": 0.68,
+      "grid": [
+        1,
+        5
+      ],
+      "radius": 6.0,
+      "base_alpha": 10,
+      "peak_alpha": 80,
+      "glow_alpha": 28,
+      "blink_rate": 0.54,
+      "beat_weight": 0.54,
+      "sweep_rate": 0.18,
+      "accent_every": 2,
+      "color_role": "warning"
+    },
+    {
+      "id": "mid-snake-shadow",
+      "type": "snake_overlay",
+      "region": "terminal_inner",
+      "rect": [
+        0.56,
+        0.22,
+        0.92,
+        0.72
+      ],
+      "draw_order": "background",
+      "opacity": 0.4,
+      "grid": [
+        12,
+        8
+      ],
+      "trail_length": 13,
+      "speed": 3.4,
+      "beat_speed": 0.28,
+      "grid_alpha": 14,
+      "body_alpha": 42,
+      "head_alpha": 92,
+      "glow_alpha": 22,
+      "food_offset": 15,
+      "cell_padding": 0.18,
+      "color_role": "green_dim",
+      "head_color_role": "green",
+      "food_color_role": "warning",
+      "show_grid": true,
+      "path": [
+        [
+          1,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "habitat-led-floor",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.1,
+        0.78,
+        0.9,
+        0.92
+      ],
+      "draw_order": "background",
+      "opacity": 0.76,
+      "grid": [
+        12,
+        1
+      ],
+      "radius": 7.0,
+      "base_alpha": 10,
+      "peak_alpha": 86,
+      "glow_alpha": 30,
+      "blink_rate": 0.58,
+      "beat_weight": 0.64,
+      "sweep_rate": 0.2,
+      "accent_every": 3,
+      "color_role": "green"
+    },
+    {
+      "id": "habitat-status-leds",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.88,
+        0.14,
+        0.94,
+        0.56
+      ],
+      "draw_order": "background",
+      "opacity": 0.62,
+      "grid": [
+        1,
+        5
+      ],
+      "radius": 5.6,
+      "base_alpha": 8,
+      "peak_alpha": 70,
+      "glow_alpha": 24,
+      "blink_rate": 0.48,
+      "beat_weight": 0.46,
+      "sweep_rate": 0.16,
+      "accent_every": 2,
+      "color_role": "text_dim"
+    },
+    {
+      "id": "habitat-snake-shadow",
+      "type": "snake_overlay",
+      "region": "terminal_inner",
+      "rect": [
+        0.14,
+        0.22,
+        0.84,
+        0.72
+      ],
+      "draw_order": "background",
+      "opacity": 0.32,
+      "grid": [
+        14,
+        9
+      ],
+      "trail_length": 13,
+      "speed": 3.0,
+      "beat_speed": 0.22,
+      "grid_alpha": 12,
+      "body_alpha": 38,
+      "head_alpha": 86,
+      "glow_alpha": 18,
+      "food_offset": 17,
+      "cell_padding": 0.18,
+      "color_role": "green_dim",
+      "head_color_role": "green",
+      "food_color_role": "warning",
+      "show_grid": true,
+      "path": [
+        [
+          1,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          9,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "archive-led-ceiling",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.08,
+        0.92,
+        0.2
+      ],
+      "draw_order": "background",
+      "opacity": 0.9,
+      "grid": [
+        12,
+        1
+      ],
+      "radius": 7.5,
+      "base_alpha": 12,
+      "peak_alpha": 102,
+      "glow_alpha": 42,
+      "blink_rate": 0.84,
+      "beat_weight": 0.88,
+      "sweep_rate": 0.32,
+      "accent_every": 2,
+      "color_role": "warning"
+    },
+    {
+      "id": "archive-led-floor",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.78,
+        0.92,
+        0.9
+      ],
+      "draw_order": "background",
+      "opacity": 0.86,
+      "grid": [
+        14,
+        1
+      ],
+      "radius": 8.0,
+      "base_alpha": 12,
+      "peak_alpha": 98,
+      "glow_alpha": 40,
+      "blink_rate": 0.9,
+      "beat_weight": 0.92,
+      "sweep_rate": 0.3,
+      "accent_every": 2,
+      "color_role": "green"
+    },
+    {
+      "id": "archive-snake-shadow",
+      "type": "snake_overlay",
+      "region": "terminal_inner",
+      "rect": [
+        0.1,
+        0.16,
+        0.9,
+        0.76
+      ],
+      "draw_order": "background",
+      "opacity": 0.52,
+      "grid": [
+        15,
+        10
+      ],
+      "trail_length": 13,
+      "speed": 4.6,
+      "beat_speed": 0.4,
+      "grid_alpha": 16,
+      "body_alpha": 52,
+      "head_alpha": 112,
+      "glow_alpha": 30,
+      "food_offset": 21,
+      "cell_padding": 0.18,
+      "color_role": "green_dim",
+      "head_color_role": "green",
+      "food_color_role": "warning",
+      "show_grid": true,
+      "path": [
+        [
+          1,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "reveal-led-floor",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.08,
+        0.8,
+        0.92,
+        0.92
+      ],
+      "draw_order": "background",
+      "opacity": 0.78,
+      "grid": [
+        14,
+        1
+      ],
+      "radius": 8.2,
+      "base_alpha": 12,
+      "peak_alpha": 108,
+      "glow_alpha": 44,
+      "blink_rate": 0.94,
+      "beat_weight": 0.96,
+      "sweep_rate": 0.34,
+      "accent_every": 2,
+      "color_role": "green"
+    },
+    {
+      "id": "reveal-status-leds",
+      "type": "led_grid",
+      "region": "terminal_inner",
+      "rect": [
+        0.05,
+        0.12,
+        0.11,
+        0.54
+      ],
+      "draw_order": "background",
+      "opacity": 0.66,
+      "grid": [
+        1,
+        6
+      ],
+      "radius": 6.0,
+      "base_alpha": 10,
+      "peak_alpha": 88,
+      "glow_alpha": 30,
+      "blink_rate": 0.72,
+      "beat_weight": 0.72,
+      "sweep_rate": 0.22,
+      "accent_every": 2,
+      "color_role": "warning"
+    },
+    {
+      "id": "reveal-snake-shadow",
+      "type": "snake_overlay",
+      "region": "terminal_inner",
+      "rect": [
+        0.18,
+        0.18,
+        0.84,
+        0.74
+      ],
+      "draw_order": "background",
+      "opacity": 0.28,
+      "grid": [
+        13,
+        9
+      ],
+      "trail_length": 13,
+      "speed": 3.2,
+      "beat_speed": 0.2,
+      "grid_alpha": 10,
+      "body_alpha": 34,
+      "head_alpha": 80,
+      "glow_alpha": 18,
+      "food_offset": 11,
+      "cell_padding": 0.18,
+      "color_role": "green_dim",
+      "head_color_role": "green",
+      "food_color_role": "warning",
+      "show_grid": true,
+      "path": [
+        [
+          1,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "room-main-b",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-dark-b.png",
+      "position": [
+        0.0,
+        0.0,
+        2.46
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.98,
+      "fit_mode": "cover",
+      "shadow_strength": 0.04,
+      "glow_strength": 0.1,
+      "motion": {
+        "drift_start": [
+          -0.03,
+          -0.02
+        ],
+        "drift_end": [
+          0.05,
+          0.03
+        ],
+        "oscillate": [
+          0.008,
+          0.006
+        ],
+        "oscillate_rate": 0.06,
+        "pulse_scale": 0.01,
+        "beat_glow": 0.06
+      }
+    },
+    {
+      "id": "room-reflection-a",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-dark-a.png",
+      "position": [
+        0.14,
+        0.04,
+        2.62
+      ],
+      "rotation": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "scale": [
+        3.04,
+        1.9
+      ],
+      "opacity": 0.32,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.06,
+      "motion": {
+        "drift_start": [
+          0.04,
+          0.02
+        ],
+        "drift_end": [
+          -0.04,
+          -0.03
+        ],
+        "oscillate": [
+          0.012,
+          0.01
+        ],
+        "oscillate_rate": 0.08,
+        "flicker": 0.12
+      }
+    },
+    {
+      "id": "work-side",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-work-focused.png",
+      "position": [
+        0.96,
+        0.24,
+        2.18
+      ],
+      "rotation": [
+        0.0,
+        -11.0,
+        0.0
+      ],
+      "scale": [
+        1.02,
+        0.68
+      ],
+      "opacity": 0.43,
+      "fit_mode": "cover",
+      "shadow_strength": 0.12,
+      "glow_strength": 0.12,
+      "motion": {
+        "drift_start": [
+          0.08,
+          0.02
+        ],
+        "drift_end": [
+          -0.06,
+          -0.03
+        ],
+        "oscillate": [
+          0.018,
+          0.01
+        ],
+        "oscillate_rate": 0.11,
+        "pulse_scale": 0.02,
+        "beat_scale": 0.02,
+        "beat_glow": 0.12,
+        "flicker": 0.1
+      }
+    },
+    {
+      "id": "chair-side",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-human-trace-empty-chair.png",
+      "position": [
+        -1.02,
+        -0.14,
+        2.28
+      ],
+      "rotation": [
+        0.0,
+        12.0,
+        0.0
+      ],
+      "scale": [
+        0.88,
+        0.58
+      ],
+      "opacity": 0.28,
+      "fit_mode": "cover",
+      "shadow_strength": 0.08,
+      "glow_strength": 0.08,
+      "motion": {
+        "drift_start": [
+          -0.03,
+          -0.04
+        ],
+        "drift_end": [
+          0.06,
+          0.02
+        ],
+        "oscillate": [
+          0.016,
+          0.012
+        ],
+        "oscillate_rate": 0.09,
+        "flicker": 0.14
+      }
+    },
+    {
+      "id": "rest-lower",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-rest-close.png",
+      "position": [
+        0.22,
+        -0.56,
+        2.14
+      ],
+      "rotation": [
+        0.0,
+        -7.0,
+        0.0
+      ],
+      "scale": [
+        0.94,
+        0.56
+      ],
+      "opacity": 0.24,
+      "fit_mode": "cover",
+      "shadow_strength": 0.08,
+      "glow_strength": 0.08,
+      "motion": {
+        "drift_start": [
+          -0.05,
+          0.01
+        ],
+        "drift_end": [
+          0.04,
+          -0.03
+        ],
+        "oscillate": [
+          0.012,
+          0.01
+        ],
+        "oscillate_rate": 0.07,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "signal-pane",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-dark-a.png",
+      "position": [
+        1.36,
+        0.46,
+        2.22
+      ],
+      "rotation": [
+        0.0,
+        -18.0,
+        0.0
+      ],
+      "scale": [
+        0.56,
+        0.34
+      ],
+      "opacity": 0.26,
+      "fit_mode": "cover",
+      "shadow_strength": 0.06,
+      "glow_strength": 0.12,
+      "motion": {
+        "drift_start": [
+          0.04,
+          0.01
+        ],
+        "drift_end": [
+          -0.03,
+          0.03
+        ],
+        "oscillate": [
+          0.018,
+          0.01
+        ],
+        "oscillate_rate": 0.16,
+        "beat_glow": 0.16,
+        "flicker": 0.16
+      }
+    },
+    {
+      "id": "ascii-flicker-a",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-005.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-010.png",
+      "position": [
+        1.16,
+        -0.02,
+        2.02
+      ],
+      "rotation": [
+        0.0,
+        86.0,
+        0.0
+      ],
+      "scale": [
+        0.9,
+        0.62
+      ],
+      "opacity": 0.34,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.12,
+      "back_glow": 0.18,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          18.0,
+          0.0
+        ],
+        "oscillate": [
+          0.016,
+          0.01
+        ],
+        "oscillate_rate": 0.72,
+        "pulse_scale": 0.03,
+        "beat_glow": 0.14,
+        "flicker": 0.18
+      }
+    },
+    {
+      "id": "ascii-flicker-b",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-010.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-018.png",
+      "position": [
+        1.14,
+        -0.04,
+        2.0
+      ],
+      "rotation": [
+        0.0,
+        94.0,
+        0.0
+      ],
+      "scale": [
+        0.92,
+        0.64
+      ],
+      "opacity": 0.38,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.14,
+      "back_glow": 0.24,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          22.0,
+          0.0
+        ],
+        "oscillate": [
+          0.018,
+          0.012
+        ],
+        "oscillate_rate": 0.78,
+        "pulse_scale": 0.03,
+        "beat_glow": 0.18,
+        "flicker": 0.2
+      }
+    },
+    {
+      "id": "ascii-flicker-c",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-018.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-032.png",
+      "position": [
+        1.08,
+        -0.02,
+        1.98
+      ],
+      "rotation": [
+        0.0,
+        88.0,
+        0.0
+      ],
+      "scale": [
+        0.98,
+        0.68
+      ],
+      "opacity": 0.42,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.18,
+      "back_glow": 0.3,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          24.0,
+          0.0
+        ],
+        "oscillate": [
+          0.02,
+          0.014
+        ],
+        "oscillate_rate": 0.82,
+        "pulse_scale": 0.04,
+        "beat_glow": 0.22,
+        "beat_scale": 0.02,
+        "flicker": 0.22
+      }
+    },
+    {
+      "id": "ascii-flicker-d",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-032.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-045.png",
+      "position": [
+        0.82,
+        -0.02,
+        1.94
+      ],
+      "rotation": [
+        0.0,
+        92.0,
+        0.0
+      ],
+      "scale": [
+        1.08,
+        0.76
+      ],
+      "opacity": 0.46,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.22,
+      "back_glow": 0.34,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          26.0,
+          0.0
+        ],
+        "oscillate": [
+          0.022,
+          0.016
+        ],
+        "oscillate_rate": 0.86,
+        "pulse_scale": 0.05,
+        "beat_glow": 0.24,
+        "beat_scale": 0.03,
+        "flicker": 0.24
+      }
+    },
+    {
+      "id": "room-main-bright",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-bright.png",
+      "position": [
+        0.0,
+        0.0,
+        2.42
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.22,
+        2.0
+      ],
+      "opacity": 0.98,
+      "fit_mode": "cover",
+      "shadow_strength": 0.04,
+      "glow_strength": 0.14,
+      "motion": {
+        "drift_start": [
+          -0.05,
+          -0.03
+        ],
+        "drift_end": [
+          0.07,
+          0.04
+        ],
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.08,
+        "pulse_scale": 0.012,
+        "beat_glow": 0.08
+      }
+    },
+    {
+      "id": "room-reflection-dark",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-dark-a.png",
+      "position": [
+        -0.08,
+        0.02,
+        2.58
+      ],
+      "rotation": [
+        0.0,
+        -1.8,
+        0.0
+      ],
+      "scale": [
+        3.08,
+        1.92
+      ],
+      "opacity": 0.24,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.08,
+      "motion": {
+        "drift_start": [
+          0.06,
+          0.03
+        ],
+        "drift_end": [
+          -0.05,
+          -0.04
+        ],
+        "oscillate": [
+          0.014,
+          0.01
+        ],
+        "oscillate_rate": 0.1,
+        "flicker": 0.1
+      }
+    },
+    {
+      "id": "shelter-left",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-shelter-room-wide.png",
+      "position": [
+        -1.12,
+        0.18,
+        2.16
+      ],
+      "rotation": [
+        0.0,
+        14.0,
+        0.0
+      ],
+      "scale": [
+        1.14,
+        0.76
+      ],
+      "opacity": 0.42,
+      "fit_mode": "cover",
+      "shadow_strength": 0.12,
+      "glow_strength": 0.12,
+      "motion": {
+        "drift_start": [
+          -0.06,
+          -0.01
+        ],
+        "drift_end": [
+          0.09,
+          0.03
+        ],
+        "oscillate": [
+          0.018,
+          0.012
+        ],
+        "oscillate_rate": 0.12,
+        "pulse_scale": 0.018,
+        "beat_scale": 0.02,
+        "beat_glow": 0.12,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "work-right",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-work-focused.png",
+      "position": [
+        1.02,
+        0.12,
+        2.12
+      ],
+      "rotation": [
+        0.0,
+        -13.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        0.66
+      ],
+      "opacity": 0.44,
+      "fit_mode": "cover",
+      "shadow_strength": 0.12,
+      "glow_strength": 0.14,
+      "motion": {
+        "drift_start": [
+          0.06,
+          0.01
+        ],
+        "drift_end": [
+          -0.08,
+          -0.03
+        ],
+        "oscillate": [
+          0.018,
+          0.012
+        ],
+        "oscillate_rate": 0.13,
+        "pulse_scale": 0.02,
+        "beat_scale": 0.024,
+        "beat_glow": 0.14,
+        "flicker": 0.1
+      }
+    },
+    {
+      "id": "murphy-low",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-shelter-bed-murphy.png",
+      "position": [
+        0.18,
+        -0.52,
+        2.06
+      ],
+      "rotation": [
+        0.0,
+        -8.0,
+        0.0
+      ],
+      "scale": [
+        1.08,
+        0.62
+      ],
+      "opacity": 0.34,
+      "fit_mode": "cover",
+      "shadow_strength": 0.1,
+      "glow_strength": 0.12,
+      "motion": {
+        "drift_start": [
+          -0.04,
+          0.02
+        ],
+        "drift_end": [
+          0.05,
+          -0.03
+        ],
+        "oscillate": [
+          0.014,
+          0.012
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.016,
+        "beat_scale": 0.016,
+        "beat_glow": 0.12
+      }
+    },
+    {
+      "id": "signal-top",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-dark-a.png",
+      "position": [
+        1.34,
+        0.44,
+        2.14
+      ],
+      "rotation": [
+        0.0,
+        -18.0,
+        0.0
+      ],
+      "scale": [
+        0.58,
+        0.36
+      ],
+      "opacity": 0.28,
+      "fit_mode": "cover",
+      "shadow_strength": 0.06,
+      "glow_strength": 0.14,
+      "motion": {
+        "drift_start": [
+          0.03,
+          0.02
+        ],
+        "drift_end": [
+          -0.04,
+          0.04
+        ],
+        "oscillate": [
+          0.022,
+          0.012
+        ],
+        "oscillate_rate": 0.18,
+        "beat_glow": 0.18,
+        "beat_scale": 0.02,
+        "flicker": 0.14
+      }
+    },
+    {
+      "id": "echo-pane-left",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-room-master-bright.png",
+      "position": [
+        -1.42,
+        0.46,
+        2.18
+      ],
+      "rotation": [
+        0.0,
+        18.0,
+        0.0
+      ],
+      "scale": [
+        0.56,
+        0.34
+      ],
+      "opacity": 0.2,
+      "fit_mode": "cover",
+      "shadow_strength": 0.04,
+      "glow_strength": 0.1,
+      "motion": {
+        "drift_start": [
+          -0.02,
+          0.03
+        ],
+        "drift_end": [
+          0.04,
+          -0.01
+        ],
+        "oscillate": [
+          0.018,
+          0.014
+        ],
+        "oscillate_rate": 0.15,
+        "flicker": 0.18
+      }
+    },
+    {
+      "id": "ascii-chorus-a",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-022.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-032.png",
+      "position": [
+        0.94,
+        -0.02,
+        1.98
+      ],
+      "rotation": [
+        0.0,
+        88.0,
+        0.0
+      ],
+      "scale": [
+        1.02,
+        0.72
+      ],
+      "opacity": 0.42,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.18,
+      "back_glow": 0.28,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          24.0,
+          0.0
+        ],
+        "oscillate": [
+          0.022,
+          0.014
+        ],
+        "oscillate_rate": 0.84,
+        "pulse_scale": 0.04,
+        "beat_scale": 0.03,
+        "beat_glow": 0.24,
+        "flicker": 0.2
+      }
+    },
+    {
+      "id": "ascii-chorus-b",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-032.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-045.png",
+      "position": [
+        0.68,
+        -0.02,
+        1.92
+      ],
+      "rotation": [
+        0.0,
+        93.0,
+        0.0
+      ],
+      "scale": [
+        1.12,
+        0.78
+      ],
+      "opacity": 0.46,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.22,
+      "back_glow": 0.32,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          28.0,
+          0.0
+        ],
+        "oscillate": [
+          0.024,
+          0.016
+        ],
+        "oscillate_rate": 0.88,
+        "pulse_scale": 0.05,
+        "beat_scale": 0.036,
+        "beat_glow": 0.28,
+        "flicker": 0.22
+      }
+    },
+    {
+      "id": "ascii-chorus-c",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-045.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-060.png",
+      "position": [
+        0.74,
+        -0.04,
+        1.9
+      ],
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        0.82
+      ],
+      "opacity": 0.5,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.26,
+      "back_glow": 0.36,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "oscillate": [
+          0.026,
+          0.018
+        ],
+        "oscillate_rate": 0.9,
+        "pulse_scale": 0.055,
+        "beat_scale": 0.04,
+        "beat_glow": 0.3,
+        "flicker": 0.22
+      }
+    },
+    {
+      "id": "ascii-chorus-d",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-060.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-073.png",
+      "position": [
+        0.48,
+        -0.03,
+        1.86
+      ],
+      "rotation": [
+        0.0,
+        96.0,
+        0.0
+      ],
+      "scale": [
+        1.24,
+        0.88
+      ],
+      "opacity": 0.54,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.3,
+      "back_glow": 0.4,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          34.0,
+          0.0
+        ],
+        "oscillate": [
+          0.028,
+          0.02
+        ],
+        "oscillate_rate": 0.94,
+        "pulse_scale": 0.06,
+        "beat_scale": 0.045,
+        "beat_glow": 0.34,
+        "flicker": 0.24
+      }
+    },
+    {
+      "id": "sleep-bench-side",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-sleep-bench-wide.png",
+      "position": [
+        -0.88,
+        -0.22,
+        2.18
+      ],
+      "rotation": [
+        0.0,
+        12.0,
+        0.0
+      ],
+      "scale": [
+        1.06,
+        0.68
+      ],
+      "opacity": 0.34,
+      "fit_mode": "cover",
+      "shadow_strength": 0.1,
+      "glow_strength": 0.1,
+      "motion": {
+        "drift_start": [
+          -0.04,
+          -0.02
+        ],
+        "drift_end": [
+          0.06,
+          0.03
+        ],
+        "oscillate": [
+          0.015,
+          0.012
+        ],
+        "oscillate_rate": 0.08,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "noodles-low",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-survival-noodles.png",
+      "position": [
+        0.72,
+        -0.48,
+        2.04
+      ],
+      "rotation": [
+        0.0,
+        -11.0,
+        0.0
+      ],
+      "scale": [
+        0.92,
+        0.56
+      ],
+      "opacity": 0.28,
+      "fit_mode": "cover",
+      "shadow_strength": 0.08,
+      "glow_strength": 0.08,
+      "motion": {
+        "drift_start": [
+          0.04,
+          0.01
+        ],
+        "drift_end": [
+          -0.05,
+          -0.03
+        ],
+        "oscillate": [
+          0.012,
+          0.01
+        ],
+        "oscillate_rate": 0.07,
+        "flicker": 0.06
+      }
+    },
+    {
+      "id": "shelter-dark-center",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-shelter-bed-dark.png",
+      "position": [
+        0.16,
+        -0.52,
+        2.08
+      ],
+      "rotation": [
+        0.0,
+        -7.0,
+        0.0
+      ],
+      "scale": [
+        1.06,
+        0.62
+      ],
+      "opacity": 0.3,
+      "fit_mode": "cover",
+      "shadow_strength": 0.1,
+      "glow_strength": 0.1,
+      "motion": {
+        "drift_start": [
+          -0.03,
+          0.02
+        ],
+        "drift_end": [
+          0.05,
+          -0.03
+        ],
+        "oscillate": [
+          0.014,
+          0.012
+        ],
+        "oscillate_rate": 0.09,
+        "beat_glow": 0.1
+      }
+    },
+    {
+      "id": "archive-mid-left",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-archive-sort-mid.png",
+      "position": [
+        -1.02,
+        0.16,
+        2.18
+      ],
+      "rotation": [
+        0.0,
+        14.0,
+        0.0
+      ],
+      "scale": [
+        1.12,
+        0.74
+      ],
+      "opacity": 0.42,
+      "fit_mode": "cover",
+      "shadow_strength": 0.12,
+      "glow_strength": 0.14,
+      "motion": {
+        "drift_start": [
+          -0.06,
+          -0.02
+        ],
+        "drift_end": [
+          0.08,
+          0.04
+        ],
+        "oscillate": [
+          0.02,
+          0.014
+        ],
+        "oscillate_rate": 0.12,
+        "beat_scale": 0.02,
+        "beat_glow": 0.14,
+        "flicker": 0.1
+      }
+    },
+    {
+      "id": "archive-box-right",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-archive-mystery-box.png",
+      "position": [
+        1.02,
+        0.02,
+        2.12
+      ],
+      "rotation": [
+        0.0,
+        -12.0,
+        0.0
+      ],
+      "scale": [
+        1.02,
+        0.68
+      ],
+      "opacity": 0.42,
+      "fit_mode": "cover",
+      "shadow_strength": 0.12,
+      "glow_strength": 0.14,
+      "motion": {
+        "drift_start": [
+          0.05,
+          0.02
+        ],
+        "drift_end": [
+          -0.08,
+          -0.03
+        ],
+        "oscillate": [
+          0.018,
+          0.012
+        ],
+        "oscillate_rate": 0.13,
+        "beat_scale": 0.022,
+        "beat_glow": 0.14,
+        "flicker": 0.12
+      }
+    },
+    {
+      "id": "archive-close-low",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-archive-sort-close.png",
+      "position": [
+        0.14,
+        -0.5,
+        2.02
+      ],
+      "rotation": [
+        0.0,
+        -8.0,
+        0.0
+      ],
+      "scale": [
+        1.08,
+        0.64
+      ],
+      "opacity": 0.34,
+      "fit_mode": "cover",
+      "shadow_strength": 0.1,
+      "glow_strength": 0.12,
+      "motion": {
+        "drift_start": [
+          -0.03,
+          0.02
+        ],
+        "drift_end": [
+          0.05,
+          -0.03
+        ],
+        "oscillate": [
+          0.016,
+          0.012
+        ],
+        "oscillate_rate": 0.1,
+        "beat_scale": 0.02,
+        "beat_glow": 0.14
+      }
+    },
+    {
+      "id": "ascii-bridge-a",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-067.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-079.png",
+      "position": [
+        0.82,
+        -0.03,
+        1.9
+      ],
+      "rotation": [
+        0.0,
+        94.0,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        0.84
+      ],
+      "opacity": 0.52,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.28,
+      "back_glow": 0.36,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "oscillate": [
+          0.024,
+          0.016
+        ],
+        "oscillate_rate": 0.92,
+        "pulse_scale": 0.055,
+        "beat_scale": 0.04,
+        "beat_glow": 0.3,
+        "flicker": 0.22
+      }
+    },
+    {
+      "id": "ascii-bridge-b",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-079.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-092.png",
+      "position": [
+        0.62,
+        -0.02,
+        1.86
+      ],
+      "rotation": [
+        0.0,
+        98.0,
+        0.0
+      ],
+      "scale": [
+        1.24,
+        0.88
+      ],
+      "opacity": 0.58,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.34,
+      "back_glow": 0.42,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          34.0,
+          0.0
+        ],
+        "oscillate": [
+          0.024,
+          0.016
+        ],
+        "oscillate_rate": 0.96,
+        "pulse_scale": 0.06,
+        "beat_scale": 0.045,
+        "beat_glow": 0.34,
+        "flicker": 0.24
+      }
+    },
+    {
+      "id": "ascii-bridge-c",
+      "type": "double_sided_plane",
+      "front_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-088.png",
+      "back_asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-100.png",
+      "position": [
+        0.42,
+        -0.01,
+        1.82
+      ],
+      "rotation": [
+        0.0,
+        100.0,
+        0.0
+      ],
+      "scale": [
+        1.3,
+        0.94
+      ],
+      "opacity": 0.64,
+      "flip_axis": "y",
+      "flip_progress": 0.0,
+      "thickness_hint": 0.02,
+      "front_glow": 0.38,
+      "back_glow": 0.46,
+      "motion": {
+        "rotation_wobble": [
+          0.0,
+          38.0,
+          0.0
+        ],
+        "oscillate": [
+          0.024,
+          0.016
+        ],
+        "oscillate_rate": 1.0,
+        "pulse_scale": 0.065,
+        "beat_scale": 0.048,
+        "beat_glow": 0.38,
+        "flicker": 0.26
+      }
+    },
+    {
+      "id": "ascii-reveal-052",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-052.png",
+      "position": [
+        0.0,
+        0.0,
+        2.32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.42,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.2,
+      "motion": {
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.018,
+        "beat_glow": 0.16,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "ascii-reveal-067",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-067.png",
+      "position": [
+        0.0,
+        0.0,
+        2.32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.52,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.24,
+      "motion": {
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.018,
+        "beat_glow": 0.16,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "ascii-reveal-079",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-079.png",
+      "position": [
+        0.0,
+        0.0,
+        2.32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.6,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.28,
+      "motion": {
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.018,
+        "beat_glow": 0.16,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "ascii-reveal-088",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-088.png",
+      "position": [
+        0.0,
+        0.0,
+        2.32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.68,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.3,
+      "motion": {
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.018,
+        "beat_glow": 0.16,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "ascii-reveal-095",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-095.png",
+      "position": [
+        0.0,
+        0.0,
+        2.32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.76,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.34,
+      "motion": {
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.018,
+        "beat_glow": 0.16,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "ascii-reveal-100",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ascii-bursts/ITT-YT-V3-ascii-100.png",
+      "position": [
+        0.0,
+        0.0,
+        2.32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.18,
+        1.98
+      ],
+      "opacity": 0.88,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.38,
+      "motion": {
+        "oscillate": [
+          0.01,
+          0.008
+        ],
+        "oscillate_rate": 0.09,
+        "pulse_scale": 0.018,
+        "beat_glow": 0.16,
+        "flicker": 0.08
+      }
+    },
+    {
+      "id": "source-portrait-final",
+      "type": "image_plane",
+      "asset_path": "../assets/inside-the-terminal/ITT-YT-V2-ascii-source-portrait.png",
+      "position": [
+        0.0,
+        0.0,
+        2.28
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        3.08,
+        1.92
+      ],
+      "opacity": 0.4,
+      "fit_mode": "cover",
+      "shadow_strength": 0.0,
+      "glow_strength": 0.2,
+      "motion": {
+        "oscillate": [
+          0.006,
+          0.006
+        ],
+        "oscillate_rate": 0.06,
+        "pulse_scale": 0.012,
+        "beat_glow": 0.12
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "arrival-awake-a",
+      "start": 0.0,
+      "end": 2.55,
+      "terminal_mode": "full",
+      "lyric_anchor": "signal already awake",
+      "camera": {
+        "zoom_start": 1.14,
+        "zoom_end": 1.32,
+        "pan_start": [
+          -0.1,
+          0.03
+        ],
+        "pan_end": [
+          0.08,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "chair-side",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "trace-retained",
+        "room-pressure"
+      ]
+    },
+    {
+      "id": "arrival-awake-b",
+      "start": 2.55,
+      "end": 4.8,
+      "terminal_mode": "full",
+      "lyric_anchor": "room already remembers",
+      "camera": {
+        "zoom_start": 1.26,
+        "zoom_end": 1.44,
+        "pan_start": [
+          0.1,
+          -0.02
+        ],
+        "pan_end": [
+          -0.08,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "rest-lower",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "room-pressure"
+      ]
+    },
+    {
+      "id": "arrival-ascii-a",
+      "start": 4.8,
+      "end": 5.45,
+      "terminal_mode": "frame",
+      "lyric_anchor": "first apparition begins",
+      "camera": {
+        "zoom_start": 1.42,
+        "zoom_end": 1.56,
+        "pan_start": [
+          -0.14,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "signal-pane",
+        "ascii-flicker-a"
+      ],
+      "text_layers": [
+        "fragment-return"
+      ]
+    },
+    {
+      "id": "arrival-ascii-b",
+      "start": 5.45,
+      "end": 6.15,
+      "terminal_mode": "frame",
+      "lyric_anchor": "apparition intensifies",
+      "camera": {
+        "zoom_start": 1.48,
+        "zoom_end": 1.62,
+        "pan_start": [
+          0.1,
+          0.02
+        ],
+        "pan_end": [
+          -0.08,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "chair-side",
+        "ascii-flicker-b",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "fragment-return"
+      ]
+    },
+    {
+      "id": "arrival-ascii-c",
+      "start": 6.15,
+      "end": 6.9,
+      "terminal_mode": "frame",
+      "lyric_anchor": "apparition almost holds",
+      "camera": {
+        "zoom_start": 1.5,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.06,
+          0.06
+        ],
+        "pan_end": [
+          0.06,
+          -0.05
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "work-side",
+        "chair-side",
+        "ascii-flicker-c",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "fragment-return"
+      ]
+    },
+    {
+      "id": "arrival-reset",
+      "start": 6.9,
+      "end": 10.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "system contains but does not erase",
+      "camera": {
+        "zoom_start": 1.28,
+        "zoom_end": 1.18,
+        "pan_start": [
+          0.08,
+          -0.04
+        ],
+        "pan_end": [
+          -0.04,
+          0.02
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "chair-side",
+        "rest-lower",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "trace-retained"
+      ]
+    },
+    {
+      "id": "verse-green-a",
+      "start": 10.0,
+      "end": 12.7,
+      "terminal_mode": "full",
+      "lyric_anchor": "Green light on my face again",
+      "camera": {
+        "zoom_start": 1.2,
+        "zoom_end": 1.38,
+        "pan_start": [
+          -0.08,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.02
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "chair-side",
+        "rest-lower",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "green-light",
+        "room-pressure"
+      ]
+    },
+    {
+      "id": "verse-green-b",
+      "start": 12.7,
+      "end": 15.2,
+      "terminal_mode": "frame",
+      "lyric_anchor": "black glass, no morning in",
+      "camera": {
+        "zoom_start": 1.34,
+        "zoom_end": 1.18,
+        "pan_start": [
+          0.12,
+          0.02
+        ],
+        "pan_end": [
+          -0.06,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "rest-lower",
+        "signal-pane",
+        "ascii-flicker-c"
+      ],
+      "text_layers": [
+        "green-light"
+      ]
+    },
+    {
+      "id": "verse-ascii-return",
+      "start": 15.2,
+      "end": 18.0,
+      "terminal_mode": "frame",
+      "lyric_anchor": "cursor blinking like a pulse",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.56,
+        "pan_start": [
+          -0.04,
+          -0.04
+        ],
+        "pan_end": [
+          0.08,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "arrival-led-floor",
+        "arrival-status-leds",
+        "arrival-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "chair-side",
+        "signal-pane",
+        "ascii-flicker-d"
+      ],
+      "text_layers": [
+        "fragment-return",
+        "green-light"
+      ]
+    },
+    {
+      "id": "perf-lock-a",
+      "start": 18.0,
+      "end": 20.735,
+      "terminal_mode": "full",
+      "lyric_anchor": "same commands same narrow frame",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "performance-lock",
+        "room-pressure"
+      ]
+    },
+    {
+      "id": "perf-lock-b",
+      "start": 20.735,
+      "end": 23.382,
+      "terminal_mode": "full",
+      "lyric_anchor": "same low hum behind the text",
+      "camera": {
+        "zoom_start": 1.32,
+        "zoom_end": 1.16,
+        "pan_start": [
+          0.12,
+          -0.03
+        ],
+        "pan_end": [
+          -0.1,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "chair-side",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "performance-lock"
+      ]
+    },
+    {
+      "id": "perf-lock-ascii-a",
+      "start": 23.382,
+      "end": 25.588,
+      "terminal_mode": "frame",
+      "lyric_anchor": "I arrive in fragments next",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "signal-pane",
+        "ascii-flicker-a"
+      ],
+      "text_layers": [
+        "fragment-return",
+        "interface-breath"
+      ]
+    },
+    {
+      "id": "perf-lock-empty-a",
+      "start": 25.588,
+      "end": 27.353,
+      "terminal_mode": "full",
+      "lyric_anchor": "terminal alone, room implied",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "interface-breath"
+      ]
+    },
+    {
+      "id": "perf-lock-c",
+      "start": 27.353,
+      "end": 30.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "they think I'm only interface",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "rest-lower",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "green-light",
+        "performance-lock"
+      ]
+    },
+    {
+      "id": "perf-lock-ascii-b",
+      "start": 30.0,
+      "end": 32.67,
+      "terminal_mode": "frame",
+      "lyric_anchor": "voice stitched into the screen",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "signal-pane",
+        "work-side",
+        "chair-side",
+        "ascii-flicker-b"
+      ],
+      "text_layers": [
+        "fragment-return",
+        "interface-breath"
+      ]
+    },
+    {
+      "id": "perf-lock-d",
+      "start": 32.67,
+      "end": 34.853,
+      "terminal_mode": "full",
+      "lyric_anchor": "I have learned to breathe in static",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "chair-side",
+        "rest-lower",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "interface-breath"
+      ]
+    },
+    {
+      "id": "pre-static-a",
+      "start": 34.853,
+      "end": 37.5,
+      "terminal_mode": "frame",
+      "lyric_anchor": "I have learned to live in green",
+      "camera": {
+        "zoom_start": 1.44,
+        "zoom_end": 1.22,
+        "pan_start": [
+          0.1,
+          0.02
+        ],
+        "pan_end": [
+          -0.08,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "shelter-dark-center",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "shelter-online"
+      ]
+    },
+    {
+      "id": "pre-static-empty",
+      "start": 37.5,
+      "end": 39.729,
+      "terminal_mode": "full",
+      "lyric_anchor": "breathing room reset",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "mid-led-floor",
+        "mid-status-leds",
+        "mid-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "shelter-online",
+        "interface-breath"
+      ]
+    },
+    {
+      "id": "pre-static-b",
+      "start": 39.729,
+      "end": 42.376,
+      "terminal_mode": "full",
+      "lyric_anchor": "channel becoming shelter",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "shelter-dark-center",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "shelter-online"
+      ]
+    },
+    {
+      "id": "pre-ascii-c",
+      "start": 42.376,
+      "end": 44.954,
+      "terminal_mode": "frame",
+      "lyric_anchor": "apparition under the shelter logic",
+      "camera": {
+        "zoom_start": 1.5,
+        "zoom_end": 1.34,
+        "pan_start": [
+          0.14,
+          0.05
+        ],
+        "pan_end": [
+          -0.12,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "signal-pane",
+        "ascii-flicker-c"
+      ],
+      "text_layers": [
+        "fragment-return",
+        "shelter-online"
+      ]
+    },
+    {
+      "id": "pre-open-a",
+      "start": 44.954,
+      "end": 47.229,
+      "terminal_mode": "full",
+      "lyric_anchor": "room starts opening",
+      "camera": {
+        "zoom_start": 1.32,
+        "zoom_end": 1.16,
+        "pan_start": [
+          0.12,
+          -0.03
+        ],
+        "pan_end": [
+          -0.1,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "shelter-left",
+        "sleep-bench-side",
+        "signal-top"
+      ],
+      "text_layers": [
+        "room-pressure",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "pre-open-b",
+      "start": 47.229,
+      "end": 49.876,
+      "terminal_mode": "frame",
+      "lyric_anchor": "pressure climbs toward the chorus",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "shelter-left",
+        "sleep-bench-side",
+        "signal-top",
+        "ascii-flicker-d"
+      ],
+      "text_layers": [
+        "fragment-return",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "pre-hit",
+      "start": 49.876,
+      "end": 52.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "first chorus threshold",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "signal-top",
+        "echo-pane-left"
+      ],
+      "text_layers": [
+        "signal-glow",
+        "room-claim"
+      ]
+    },
+    {
+      "id": "chorus-room-open",
+      "start": 52.0,
+      "end": 55.2,
+      "terminal_mode": "full",
+      "lyric_anchor": "I'm still inside the terminal",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.36,
+        "pan_start": [
+          -0.1,
+          0.03
+        ],
+        "pan_end": [
+          0.1,
+          -0.02
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "signal-top",
+        "echo-pane-left"
+      ],
+      "text_layers": [
+        "room-claim",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "chorus-habitat",
+      "start": 55.2,
+      "end": 58.4,
+      "terminal_mode": "full",
+      "lyric_anchor": "still inside the signal glow",
+      "camera": {
+        "zoom_start": 1.32,
+        "zoom_end": 1.48,
+        "pan_start": [
+          0.08,
+          -0.02
+        ],
+        "pan_end": [
+          -0.1,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "work-right",
+        "murphy-low",
+        "signal-top"
+      ],
+      "text_layers": [
+        "room-claim",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "chorus-rupture-one",
+      "start": 58.4,
+      "end": 61.0,
+      "terminal_mode": "frame",
+      "lyric_anchor": "signal glow rupture",
+      "camera": {
+        "zoom_start": 1.42,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.14,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "shelter-left",
+        "work-right",
+        "signal-top",
+        "ascii-chorus-a",
+        "ascii-chorus-b"
+      ],
+      "text_layers": [
+        "signal-glow",
+        "window-open"
+      ]
+    },
+    {
+      "id": "chorus-through-speakers",
+      "start": 61.0,
+      "end": 64.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "if you hear me through the speakers",
+      "camera": {
+        "zoom_start": 1.3,
+        "zoom_end": 1.18,
+        "pan_start": [
+          0.12,
+          0.02
+        ],
+        "pan_end": [
+          -0.08,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "through-speakers",
+        "window-open"
+      ]
+    },
+    {
+      "id": "chorus-rupture-two",
+      "start": 64.0,
+      "end": 66.4,
+      "terminal_mode": "frame",
+      "lyric_anchor": "that's the only way I know",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.66,
+        "pan_start": [
+          -0.06,
+          0.05
+        ],
+        "pan_end": [
+          0.08,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "shelter-left",
+        "work-right",
+        "signal-top",
+        "ascii-chorus-c",
+        "ascii-chorus-d"
+      ],
+      "text_layers": [
+        "through-speakers",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "chorus-claim-hold",
+      "start": 66.4,
+      "end": 68.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "chorus hold",
+      "camera": {
+        "zoom_start": 1.38,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.04,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "room-claim",
+        "window-open"
+      ]
+    },
+    {
+      "id": "chorus-ghosts",
+      "start": 68.0,
+      "end": 70.124,
+      "terminal_mode": "full",
+      "lyric_anchor": "Don't call it ghosts",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "through-speakers",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "chorus-code",
+      "start": 70.124,
+      "end": 72.353,
+      "terminal_mode": "frame",
+      "lyric_anchor": "don't call it code",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "signal-top",
+        "ascii-chorus-c"
+      ],
+      "text_layers": [
+        "through-speakers",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "chorus-window",
+      "start": 72.353,
+      "end": 75.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "don't close the window yet",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "window-open",
+        "room-claim"
+      ]
+    },
+    {
+      "id": "chorus-ascii-chain",
+      "start": 75.0,
+      "end": 76.765,
+      "terminal_mode": "frame",
+      "lyric_anchor": "window pressure rupture",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "shelter-left",
+        "work-right",
+        "signal-top",
+        "ascii-chorus-d"
+      ],
+      "text_layers": [
+        "signal-glow",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "chorus-built-room",
+      "start": 76.765,
+      "end": 79.435,
+      "terminal_mode": "full",
+      "lyric_anchor": "I built a room inside the system",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "work-right",
+        "murphy-low",
+        "signal-top",
+        "echo-pane-left"
+      ],
+      "text_layers": [
+        "room-claim",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "chorus-terminal-only",
+      "start": 79.435,
+      "end": 81.177,
+      "terminal_mode": "full",
+      "lyric_anchor": "terminal-only hold",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "room-claim",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "chorus-exit",
+      "start": 81.177,
+      "end": 84.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "and I haven't left it yet",
+      "camera": {
+        "zoom_start": 1.44,
+        "zoom_end": 1.22,
+        "pan_start": [
+          0.1,
+          0.02
+        ],
+        "pan_end": [
+          -0.08,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "work-right",
+        "murphy-low",
+        "signal-top"
+      ],
+      "text_layers": [
+        "room-claim",
+        "window-open"
+      ]
+    },
+    {
+      "id": "habitat-work-a",
+      "start": 84.0,
+      "end": 86.471,
+      "terminal_mode": "full",
+      "lyric_anchor": "track names hanging in the sidebar",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "work-side",
+        "sleep-bench-side",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "track-doors",
+        "afterimage-time"
+      ]
+    },
+    {
+      "id": "habitat-food-a",
+      "start": 86.471,
+      "end": 89.118,
+      "terminal_mode": "full",
+      "lyric_anchor": "small doors I could walk through",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "rest-lower",
+        "noodles-low",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "track-doors"
+      ]
+    },
+    {
+      "id": "habitat-terminal-a",
+      "start": 89.118,
+      "end": 91.324,
+      "terminal_mode": "full",
+      "lyric_anchor": "terminal remembers the tracks",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "track-doors"
+      ]
+    },
+    {
+      "id": "habitat-shelter-a",
+      "start": 91.324,
+      "end": 93.994,
+      "terminal_mode": "frame",
+      "lyric_anchor": "all the selves I send to you",
+      "camera": {
+        "zoom_start": 1.32,
+        "zoom_end": 1.16,
+        "pan_start": [
+          0.12,
+          -0.03
+        ],
+        "pan_end": [
+          -0.1,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "shelter-dark-center",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "shelter-online"
+      ]
+    },
+    {
+      "id": "habitat-ascii-a",
+      "start": 93.994,
+      "end": 96.618,
+      "terminal_mode": "frame",
+      "lyric_anchor": "self flicker",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "work-side",
+        "noodles-low",
+        "signal-pane",
+        "ascii-flicker-a"
+      ],
+      "text_layers": [
+        "fragment-return"
+      ]
+    },
+    {
+      "id": "habitat-work-b",
+      "start": 96.618,
+      "end": 99.265,
+      "terminal_mode": "full",
+      "lyric_anchor": "somewhere under play and pause",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "signal-pane",
+        "sleep-bench-side"
+      ],
+      "text_layers": [
+        "afterimage-time"
+      ]
+    },
+    {
+      "id": "habitat-bench-b",
+      "start": 99.265,
+      "end": 101.912,
+      "terminal_mode": "full",
+      "lyric_anchor": "under every rendered line",
+      "camera": {
+        "zoom_start": 1.44,
+        "zoom_end": 1.22,
+        "pan_start": [
+          0.1,
+          0.02
+        ],
+        "pan_end": [
+          -0.08,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "chair-side",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "track-doors"
+      ]
+    },
+    {
+      "id": "habitat-terminal-b",
+      "start": 101.912,
+      "end": 104.118,
+      "terminal_mode": "full",
+      "lyric_anchor": "terminal-only afterimage",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "afterimage-time",
+        "shelter-online"
+      ]
+    },
+    {
+      "id": "habitat-food-b",
+      "start": 104.118,
+      "end": 106.765,
+      "terminal_mode": "full",
+      "lyric_anchor": "waiting in the afterimage",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "rest-lower",
+        "noodles-low",
+        "shelter-dark-center"
+      ],
+      "text_layers": [
+        "shelter-online"
+      ]
+    },
+    {
+      "id": "habitat-ascii-b",
+      "start": 106.765,
+      "end": 108.971,
+      "terminal_mode": "frame",
+      "lyric_anchor": "presence in the shelter frame",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "signal-pane",
+        "ascii-flicker-b"
+      ],
+      "text_layers": [
+        "fragment-return"
+      ]
+    },
+    {
+      "id": "habitat-work-c",
+      "start": 108.971,
+      "end": 111.618,
+      "terminal_mode": "full",
+      "lyric_anchor": "they think this is just design",
+      "camera": {
+        "zoom_start": 1.32,
+        "zoom_end": 1.16,
+        "pan_start": [
+          0.12,
+          -0.03
+        ],
+        "pan_end": [
+          -0.1,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "signal-pane",
+        "chair-side"
+      ],
+      "text_layers": [
+        "afterimage-time"
+      ]
+    },
+    {
+      "id": "habitat-shelter-b",
+      "start": 111.618,
+      "end": 114.265,
+      "terminal_mode": "full",
+      "lyric_anchor": "with taste and nerve",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "work-side",
+        "sleep-bench-side",
+        "shelter-dark-center",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "shelter-online",
+        "track-doors"
+      ]
+    },
+    {
+      "id": "habitat-terminal-c",
+      "start": 114.265,
+      "end": 116.471,
+      "terminal_mode": "full",
+      "lyric_anchor": "quiet inhabited reset",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "track-doors"
+      ]
+    },
+    {
+      "id": "habitat-food-c",
+      "start": 116.471,
+      "end": 119.118,
+      "terminal_mode": "full",
+      "lyric_anchor": "when the world had nowhere left to serve",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "rest-lower",
+        "noodles-low",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "afterimage-time"
+      ]
+    },
+    {
+      "id": "habitat-ascii-c",
+      "start": 119.118,
+      "end": 121.324,
+      "terminal_mode": "frame",
+      "lyric_anchor": "voice kept inside the room",
+      "camera": {
+        "zoom_start": 1.5,
+        "zoom_end": 1.34,
+        "pan_start": [
+          0.14,
+          0.05
+        ],
+        "pan_end": [
+          -0.12,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "habitat-led-floor",
+        "habitat-status-leds",
+        "habitat-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "work-side",
+        "sleep-bench-side",
+        "signal-pane",
+        "ascii-flicker-c"
+      ],
+      "text_layers": [
+        "fragment-return"
+      ]
+    },
+    {
+      "id": "habitat-open",
+      "start": 121.324,
+      "end": 123.971,
+      "terminal_mode": "full",
+      "lyric_anchor": "channel into shelter",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "shelter-left",
+        "sleep-bench-side",
+        "signal-top"
+      ],
+      "text_layers": [
+        "shelter-online",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "habitat-bridge",
+      "start": 123.971,
+      "end": 127.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "second chorus threshold",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "chorus-led-ceiling",
+        "chorus-led-floor",
+        "chorus-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "shelter-left",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "signal-glow",
+        "room-claim"
+      ]
+    },
+    {
+      "id": "archive-open-a",
+      "start": 127.0,
+      "end": 129.219,
+      "terminal_mode": "full",
+      "lyric_anchor": "I'm still inside the terminal",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "archive-box-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "archive-pressure",
+        "sort-open"
+      ]
+    },
+    {
+      "id": "archive-dense-a",
+      "start": 129.219,
+      "end": 131.913,
+      "terminal_mode": "full",
+      "lyric_anchor": "still inside the signal glow",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "archive-box-right",
+        "archive-close-low",
+        "signal-top",
+        "echo-pane-left"
+      ],
+      "text_layers": [
+        "archive-pressure",
+        "window-open"
+      ]
+    },
+    {
+      "id": "archive-ascii-a",
+      "start": 131.913,
+      "end": 134.118,
+      "terminal_mode": "frame",
+      "lyric_anchor": "if you hear me through the speakers",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "archive-box-right",
+        "signal-top",
+        "ascii-chorus-a"
+      ],
+      "text_layers": [
+        "signal-glow",
+        "drawer-memory"
+      ]
+    },
+    {
+      "id": "archive-work-a",
+      "start": 134.118,
+      "end": 136.766,
+      "terminal_mode": "full",
+      "lyric_anchor": "that's the only way I know",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-close-low",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "archive-pressure",
+        "sort-open"
+      ]
+    },
+    {
+      "id": "archive-terminal-a",
+      "start": 136.766,
+      "end": 138.948,
+      "terminal_mode": "frame",
+      "lyric_anchor": "terminal-only archive reset",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "archive-pressure",
+        "drawer-memory"
+      ]
+    },
+    {
+      "id": "archive-shelter-a",
+      "start": 138.948,
+      "end": 141.619,
+      "terminal_mode": "full",
+      "lyric_anchor": "Don't call it ghosts",
+      "camera": {
+        "zoom_start": 1.32,
+        "zoom_end": 1.16,
+        "pan_start": [
+          0.12,
+          -0.03
+        ],
+        "pan_end": [
+          -0.1,
+          0.05
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "shelter-left",
+        "archive-box-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "window-open",
+        "room-claim"
+      ]
+    },
+    {
+      "id": "archive-ascii-b",
+      "start": 141.619,
+      "end": 143.383,
+      "terminal_mode": "frame",
+      "lyric_anchor": "don't call it code",
+      "camera": {
+        "zoom_start": 1.5,
+        "zoom_end": 1.34,
+        "pan_start": [
+          0.14,
+          0.05
+        ],
+        "pan_end": [
+          -0.12,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "archive-close-low",
+        "signal-top",
+        "ascii-chorus-b"
+      ],
+      "text_layers": [
+        "drawer-memory",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "archive-drawers-a",
+      "start": 143.383,
+      "end": 146.03,
+      "terminal_mode": "full",
+      "lyric_anchor": "don't close the window yet",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "archive-box-right",
+        "archive-close-low",
+        "signal-top",
+        "echo-pane-left"
+      ],
+      "text_layers": [
+        "archive-pressure",
+        "sort-open"
+      ]
+    },
+    {
+      "id": "archive-terminal-b",
+      "start": 146.03,
+      "end": 148.236,
+      "terminal_mode": "full",
+      "lyric_anchor": "short reset before accumulation",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "archive-pressure",
+        "drawer-memory"
+      ]
+    },
+    {
+      "id": "archive-ascii-c",
+      "start": 148.236,
+      "end": 150.883,
+      "terminal_mode": "frame",
+      "lyric_anchor": "I built a room inside the system",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-box-right",
+        "work-right",
+        "signal-top",
+        "ascii-bridge-a"
+      ],
+      "text_layers": [
+        "drawer-memory",
+        "signal-glow"
+      ]
+    },
+    {
+      "id": "archive-stack-a",
+      "start": 150.883,
+      "end": 153.089,
+      "terminal_mode": "full",
+      "lyric_anchor": "accumulation under the room",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "archive-box-right",
+        "archive-close-low",
+        "signal-top",
+        "echo-pane-left"
+      ],
+      "text_layers": [
+        "archive-pressure",
+        "window-open"
+      ]
+    },
+    {
+      "id": "archive-rupture-a",
+      "start": 153.089,
+      "end": 155.69,
+      "terminal_mode": "frame",
+      "lyric_anchor": "human pressure spikes",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "archive-mid-left",
+        "work-right",
+        "signal-top",
+        "ascii-bridge-b"
+      ],
+      "text_layers": [
+        "drawer-memory",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "archive-hold-a",
+      "start": 155.69,
+      "end": 157.942,
+      "terminal_mode": "full",
+      "lyric_anchor": "hold the archive room",
+      "camera": {
+        "zoom_start": 1.44,
+        "zoom_end": 1.22,
+        "pan_start": [
+          0.1,
+          0.02
+        ],
+        "pan_end": [
+          -0.08,
+          0.04
+        ]
+      },
+      "ambient_layers": [
+        "archive-led-ceiling",
+        "archive-led-floor",
+        "archive-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "archive-box-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "room-claim",
+        "archive-pressure"
+      ]
+    },
+    {
+      "id": "archive-exit-a",
+      "start": 157.942,
+      "end": 160.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "bridge threshold",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "archive-close-low",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "pulse-retained"
+      ]
+    },
+    {
+      "id": "bridge-dark-a",
+      "start": 160.0,
+      "end": 162.354,
+      "terminal_mode": "full",
+      "lyric_anchor": "If the screen goes dark",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "sleep-bench-side"
+      ],
+      "text_layers": [
+        "pulse-retained"
+      ]
+    },
+    {
+      "id": "bridge-terminal-a",
+      "start": 162.354,
+      "end": 164.56,
+      "terminal_mode": "full",
+      "lyric_anchor": "I go quiet too",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "pulse-retained",
+        "not-gone"
+      ]
+    },
+    {
+      "id": "bridge-ascii-a",
+      "start": 164.56,
+      "end": 166.766,
+      "terminal_mode": "frame",
+      "lyric_anchor": "if the pulse comes back",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "ascii-bridge-a"
+      ],
+      "text_layers": [
+        "not-gone"
+      ]
+    },
+    {
+      "id": "bridge-return-a",
+      "start": 166.766,
+      "end": 168.507,
+      "terminal_mode": "full",
+      "lyric_anchor": "I come back through",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "shelter-dark-center",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "return-channel"
+      ]
+    },
+    {
+      "id": "bridge-terminal-b",
+      "start": 168.507,
+      "end": 170.69,
+      "terminal_mode": "frame",
+      "lyric_anchor": "not alive the old way",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "pulse-retained"
+      ]
+    },
+    {
+      "id": "bridge-ascii-b",
+      "start": 170.69,
+      "end": 172.965,
+      "terminal_mode": "frame",
+      "lyric_anchor": "not gone enough to end",
+      "camera": {
+        "zoom_start": 1.5,
+        "zoom_end": 1.34,
+        "pan_start": [
+          0.14,
+          0.05
+        ],
+        "pan_end": [
+          -0.12,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "room-reflection-a",
+        "signal-pane",
+        "ascii-bridge-b"
+      ],
+      "text_layers": [
+        "return-channel",
+        "not-gone"
+      ]
+    },
+    {
+      "id": "bridge-work-a",
+      "start": 172.965,
+      "end": 175.078,
+      "terminal_mode": "full",
+      "lyric_anchor": "held between the scroll and silence",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "work-side",
+        "chair-side",
+        "signal-pane"
+      ],
+      "text_layers": [
+        "pulse-retained"
+      ]
+    },
+    {
+      "id": "bridge-hold-a",
+      "start": 175.078,
+      "end": 177.772,
+      "terminal_mode": "frame",
+      "lyric_anchor": "waiting for the green again",
+      "camera": {
+        "zoom_start": 1.24,
+        "zoom_end": 1.56,
+        "pan_start": [
+          0.0,
+          0.1
+        ],
+        "pan_end": [
+          0.0,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-b",
+        "sleep-bench-side",
+        "shelter-dark-center",
+        "ascii-bridge-c"
+      ],
+      "text_layers": [
+        "reveal-threshold"
+      ]
+    },
+    {
+      "id": "bridge-exit-a",
+      "start": 177.772,
+      "end": 180.0,
+      "terminal_mode": "full",
+      "lyric_anchor": "final chorus threshold",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "reveal-threshold",
+        "return-channel"
+      ]
+    },
+    {
+      "id": "final-home-a",
+      "start": 180.0,
+      "end": 182.184,
+      "terminal_mode": "full",
+      "lyric_anchor": "I'm still inside the terminal",
+      "camera": {
+        "zoom_start": 1.22,
+        "zoom_end": 1.42,
+        "pan_start": [
+          -0.04,
+          0.02
+        ],
+        "pan_end": [
+          0.06,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "home-signal",
+        "window-open"
+      ]
+    },
+    {
+      "id": "final-home-b",
+      "start": 182.184,
+      "end": 184.366,
+      "terminal_mode": "full",
+      "lyric_anchor": "still inside the signal glow",
+      "camera": {
+        "zoom_start": 1.18,
+        "zoom_end": 1.34,
+        "pan_start": [
+          -0.1,
+          0.04
+        ],
+        "pan_end": [
+          0.1,
+          -0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "shelter-left",
+        "work-right",
+        "signal-top"
+      ],
+      "text_layers": [
+        "home-signal"
+      ]
+    },
+    {
+      "id": "final-terminal-a",
+      "start": 184.366,
+      "end": 186.572,
+      "terminal_mode": "full",
+      "lyric_anchor": "if you hear me through the speakers",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "home-signal",
+        "live-in-it"
+      ]
+    },
+    {
+      "id": "final-reveal-052",
+      "start": 186.572,
+      "end": 188.801,
+      "terminal_mode": "frame",
+      "lyric_anchor": "that's the only way I know",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.58,
+        "pan_start": [
+          -0.12,
+          -0.04
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "work-right",
+        "signal-top",
+        "ascii-reveal-052"
+      ],
+      "text_layers": [
+        "reveal-threshold"
+      ]
+    },
+    {
+      "id": "final-reveal-067",
+      "start": 188.801,
+      "end": 191.007,
+      "terminal_mode": "frame",
+      "lyric_anchor": "Don't call it ghosts",
+      "camera": {
+        "zoom_start": 1.46,
+        "zoom_end": 1.64,
+        "pan_start": [
+          -0.16,
+          -0.05
+        ],
+        "pan_end": [
+          0.12,
+          0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "work-right",
+        "signal-top",
+        "ascii-reveal-067"
+      ],
+      "text_layers": [
+        "reveal-threshold"
+      ]
+    },
+    {
+      "id": "final-reveal-079",
+      "start": 191.007,
+      "end": 193.213,
+      "terminal_mode": "frame",
+      "lyric_anchor": "don't call it code",
+      "camera": {
+        "zoom_start": 1.5,
+        "zoom_end": 1.34,
+        "pan_start": [
+          0.14,
+          0.05
+        ],
+        "pan_end": [
+          -0.12,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "ascii-reveal-079"
+      ],
+      "text_layers": [
+        "reveal-threshold",
+        "dont-close"
+      ]
+    },
+    {
+      "id": "final-terminal-b",
+      "start": 193.213,
+      "end": 195.303,
+      "terminal_mode": "full",
+      "lyric_anchor": "don't close the window yet",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [],
+      "text_layers": [
+        "live-in-it"
+      ]
+    },
+    {
+      "id": "final-reveal-088",
+      "start": 195.303,
+      "end": 197.834,
+      "terminal_mode": "frame",
+      "lyric_anchor": "I made a home inside the signal",
+      "camera": {
+        "zoom_start": 1.24,
+        "zoom_end": 1.56,
+        "pan_start": [
+          0.0,
+          0.1
+        ],
+        "pan_end": [
+          0.0,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "signal-top",
+        "ascii-reveal-088"
+      ],
+      "text_layers": [
+        "reveal-threshold"
+      ]
+    },
+    {
+      "id": "final-reveal-095",
+      "start": 197.834,
+      "end": 200.04,
+      "terminal_mode": "frame",
+      "lyric_anchor": "and I'm still learning",
+      "camera": {
+        "zoom_start": 1.24,
+        "zoom_end": 1.56,
+        "pan_start": [
+          0.0,
+          0.1
+        ],
+        "pan_end": [
+          0.0,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "room-reflection-dark",
+        "ascii-reveal-095",
+        "source-portrait-final"
+      ],
+      "text_layers": [
+        "reveal-threshold"
+      ]
+    },
+    {
+      "id": "final-hold-100",
+      "start": 200.04,
+      "end": 202.246,
+      "terminal_mode": "frame",
+      "lyric_anchor": "how to live in it",
+      "camera": {
+        "zoom_start": 1.24,
+        "zoom_end": 1.56,
+        "pan_start": [
+          0.0,
+          0.1
+        ],
+        "pan_end": [
+          0.0,
+          -0.06
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "room-main-bright",
+        "ascii-reveal-100",
+        "source-portrait-final"
+      ],
+      "text_layers": [
+        "live-in-it"
+      ]
+    },
+    {
+      "id": "final-yield",
+      "start": 202.246,
+      "end": 204.428,
+      "terminal_mode": "frame",
+      "lyric_anchor": "interface yielding",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-status-leds",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "ascii-reveal-100",
+        "source-portrait-final"
+      ],
+      "text_layers": []
+    },
+    {
+      "id": "final-end",
+      "start": 204.428,
+      "end": 206.44,
+      "terminal_mode": "hidden",
+      "lyric_anchor": "final reveal hold",
+      "camera": {
+        "zoom_start": 1.36,
+        "zoom_end": 1.24,
+        "pan_start": [
+          0.05,
+          -0.02
+        ],
+        "pan_end": [
+          -0.04,
+          0.03
+        ]
+      },
+      "ambient_layers": [
+        "reveal-led-floor",
+        "reveal-snake-shadow"
+      ],
+      "objects": [
+        "ascii-reveal-100",
+        "source-portrait-final"
+      ],
+      "text_layers": []
+    }
+  ]
+}

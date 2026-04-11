@@ -25,9 +25,7 @@ The point is:
 - the clean master render path
 - the owned public image pack used by the release
 
-The canonical config is:
-
-- `configs/inside-the-terminal.public-v1.json`
+The canonical config is `configs/inside-the-terminal.public-v1.json`.
 
 ## Setup
 
@@ -92,3 +90,9 @@ The repo is still tuned to this video first, so the easiest path is:
 - only the public render core and required assets are included here
 - the config currently assumes the DejaVu Mono fonts available on many Linux systems
 - if your machine uses different font paths, update the `style.font_*` values in the config
+
+## Signal Context
+
+Signal is not a category. It is a room.
+
+This repo is one door into that room.

@@ -19,6 +19,13 @@ The point is:
 
 ![Inside the Terminal preview](docs/preview.png)
 
+## Public Links
+
+- [Signal room](https://hedegreenresearch.com/signal/) — the public context for this artifact.
+- [Signal repository](https://github.com/DennisHedegreen/signal) — room and artifact catalogue.
+
+This is a local render kit, not a hosted Streamlit app.
+
 ## What This Reproduces
 
 - the released `Inside the Terminal` mixed-media terminal video
